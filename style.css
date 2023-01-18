@@ -282,7 +282,7 @@ input:focus {
   }
 
   .hero__logo--section {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
   }
 }
 
@@ -298,6 +298,11 @@ input:focus {
 
   .hero__textarea button {
     right: 5%;
+    margin-right: 5px;
+  }
+
+  .hero__img img {
+    width: 35rem;
   }
 
   /* .hero__img img {
