@@ -320,10 +320,8 @@ input:focus {
   }
 }
 
+/* Height adjustment */
 @media (max-width: 62.5em) and (max-height: 43.75em) {
-  /* body {
-    display: none;
-  } */
   .hero__textarea {
     gap: 1rem;
   }
