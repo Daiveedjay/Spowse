@@ -280,6 +280,10 @@ input:focus {
   .hero--socials {
     margin-top: 0rem;
   }
+
+  .hero__logo--section {
+    margin-bottom: 1rem;
+  }
 }
 
 /* 500px and below */
