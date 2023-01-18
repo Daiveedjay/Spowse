@@ -48,7 +48,11 @@ html {
 .hero__logo--section {
   height: 10%;
   /* border: 2px solid rgb(0, 229, 255); */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 4rem;
 }
@@ -61,17 +65,30 @@ html {
 .hero__main--section {
   height: 90%;
   /* border: 2px solid green; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10rem;
 }
 .hero__textarea {
+  -webkit-box-flex: 1.2;
+  -ms-flex: 1.2;
   flex: 1.2;
   /* border: 2px solid black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
   align-items: left;
   gap: 2rem;
   height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   /* padding: 2rem 0; */
 }
@@ -82,6 +99,26 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--primary-color)),
+    color-stop(var(--primary-color)),
+    color-stop(var(--primary-color)),
+    color-stop(var(--primary-dark)),
+    color-stop(var(--primary-dark)),
+    to(var(--primary-dark))
+  );
+  background-image: -o-linear-gradient(
+    top,
+    var(--primary-color),
+    var(--primary-color),
+    var(--primary-color),
+    var(--primary-dark),
+    var(--primary-dark),
+    var(--primary-dark)
+  );
   background-image: linear-gradient(
     to bottom,
     var(--primary-color),
@@ -130,6 +167,7 @@ html {
 
 input:focus {
   outline: none;
+  -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -138,6 +176,8 @@ input:focus {
   border-radius: 30px;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 9.5%;
   cursor: pointer;
@@ -145,6 +185,8 @@ input:focus {
   border: none;
   font-family: var(--font-family);
   font-size: 1.6rem;
+  -webkit-transition: background ease-in 0.2s;
+  -o-transition: background ease-in 0.2s;
   transition: background ease-in 0.2s;
   margin-right: 10px;
 }
@@ -163,6 +205,8 @@ input:focus {
 }
 
 .hero--socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -182,9 +226,17 @@ input:focus {
 }
 .hero__img {
   /* border: 2px solid red; */
+  webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .hero__img img {
@@ -233,6 +285,9 @@ input:focus {
     flex: 1;
   } */
   .hero__main--section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 
@@ -243,12 +298,18 @@ input:focus {
 
   .hero__textarea {
     /* justify-content: center; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 1rem;
   }
 
   .hero__textarea form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -274,11 +335,18 @@ input:focus {
   }
 
   .hero__textarea {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
   .hero--socials {
     margin-top: 0rem;
+    gap: 3rem;
+  }
+
+  .hero--socials li {
+    font-size: 3rem;
   }
 
   .hero__logo--section {
