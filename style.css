@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
 
+@font-face {
+  font-family: "zonapro-black";
+  src: url("./FONTS/zonapro-regular-webfont.woff2") format("woff2"),
+    url("./FONTS/zonapro-regular-webfont.woff") format("woff"),
+    url("./FONTS/zonapro-bold-webfont.woff2") format("woff2"),
+    url("./FONTS/zonapro-bold-webfont.woff") format("woff");
+  font-weight: bolder;
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +22,7 @@
 }
 
 :root {
-  --font-family: "Source Sans Pro", sans-serif;
+  --font-family: "zonapro-black", sans-serif;
   --primary-color: #449545;
   --primary-light: #9bc7a7;
   --primary-dark: #255939;
@@ -21,7 +30,6 @@
 
 body {
   font-family: var(--font-family);
-  /* border: 2px solid red; */
   position: relative;
   overflow: hidden;
 }
@@ -47,7 +55,6 @@ html {
 
 .hero__logo--section {
   height: 10%;
-  /* border: 2px solid rgb(0, 229, 255); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +71,6 @@ html {
 
 .hero__main--section {
   height: 90%;
-  /* border: 2px solid green; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +80,6 @@ html {
   -webkit-box-flex: 1.2;
   -ms-flex: 1.2;
   flex: 1.2;
-  /* border: 2px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,12 +95,11 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  /* padding: 2rem 0; */
 }
 
 .hero__textarea h1 {
   position: relative;
-  font-size: 6rem;
+  font-size: 5rem;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -128,7 +132,7 @@ html {
     var(--primary-dark),
     var(--primary-dark)
   );
-  font-weight: 700;
+  font-weight: bold;
   padding: 1.5rem 0;
   letter-spacing: 0.5%;
 }
@@ -147,14 +151,12 @@ html {
   font-size: 2.4rem;
   line-height: 3.36rem;
   letter-spacing: 5%;
+  font-weight: 300;
 }
 
 .hero__textarea form {
   position: relative;
   width: 100%;
-  /* border: 2px solid red; */
-
-  /* padding: 1rem; */
 }
 
 .hero__textarea form input {
@@ -225,8 +227,6 @@ input:focus {
   color: var(--primary-color);
 }
 .hero__img {
-  /* border: 2px solid red; */
-  webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   display: -webkit-box;
@@ -241,7 +241,6 @@ input:focus {
 }
 .hero__img img {
   width: 40rem;
-  /* min-width: 35rem; */
 }
 
 .circular--design {
@@ -280,10 +279,6 @@ input:focus {
     font-size: 56.25%;
   }
 
-  /* .hero__textarea,
-  .hero__img {
-    flex: 1;
-  } */
   .hero__main--section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -297,7 +292,6 @@ input:focus {
   }
 
   .hero__textarea {
-    /* justify-content: center; */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -372,11 +366,6 @@ input:focus {
   .hero__img img {
     width: 35rem;
   }
-
-  /* .hero__img img {
-    width: 40rem;
-  } */
-
   .circular--design {
     width: 15rem;
     height: 15rem;
