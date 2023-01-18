@@ -273,6 +273,10 @@ input:focus {
     padding: 2rem;
   }
 
+  .hero__textarea {
+    justify-content: flex-start;
+  }
+
   .hero--socials {
     margin-top: 0rem;
   }
