@@ -260,6 +260,13 @@ input:focus {
 }
 
 /* MEDIA QUERIES */
+/* 1300px and above */
+@media (min-width: 81.25em) {
+  .hero__img img {
+    width: 100%;
+  }
+}
+
 /* 1300px and below */
 @media (max-width: 81.25em) {
   html {
