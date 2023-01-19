@@ -489,6 +489,10 @@ input:focus {
     font-size: 43.75%;
   }
 
+  .hero__logo--section img {
+    max-width: 10rem;
+  }
+
   .hero__textarea h1 {
     font-size: 3.8rem;
   }
