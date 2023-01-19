@@ -169,6 +169,10 @@ html {
   font-size: 1.5rem;
 }
 
+input {
+  font-family: var(--font-family);
+}
+
 input:focus {
   outline: none;
   -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
@@ -351,7 +355,7 @@ input:focus {
 /* Below 1000px witdth and 600px height */
 @media (max-width: 62.5em) and (max-height: 37.5em) {
   .hero__img img {
-    width: 25rem;
+    width: 20rem;
   }
 }
 /* Below 1000px witdth and 500px height */
@@ -447,6 +451,9 @@ input:focus {
 
 /* Below 600px witdth and 700px height*/
 @media (max-width: 37.5em) and (max-height: 43.75em) {
+  .hero__logo--section img {
+    max-width: 10rem;
+  }
   .hero__textarea form input {
     width: 90%;
   }
@@ -468,9 +475,9 @@ input:focus {
 
 /* Below 600px witdth and 500px height */
 @media (max-width: 37.5em) and (max-height: 31.25em) {
-  /* .hero__img img {
-    width: 22rem;
-  } */
+  .hero__img img {
+    width: 17rem;
+  }
   .hero__main--section {
     flex-direction: column-reverse;
   }
@@ -508,10 +515,10 @@ input:focus {
     right: 5%;
     margin-right: 5px;
   }
-
+  /* 
   .hero__img img {
     width: 22rem;
-  }
+  } */
   .circular--design {
     width: 15rem;
     height: 15rem;
@@ -522,9 +529,9 @@ input:focus {
 
 /* Below 500px witdth and 700px height */
 @media (max-width: 31.25em) and (max-height: 43.75em) {
-  .hero__img img {
+  /* .hero__img img {
     width: 20rem;
-  }
+  } */
 
   .hero__textarea button {
     padding: 1.5rem 3rem;
