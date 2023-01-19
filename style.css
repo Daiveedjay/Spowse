@@ -511,3 +511,10 @@ input:focus {
     font-size: 37.5%;
   }
 }
+
+/* 310px and below */
+@media (max-width: 19.75em) {
+  .hero__textarea button {
+    padding: 1.5rem 3rem;
+  }
+}
