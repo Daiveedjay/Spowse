@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
-
 @font-face {
   font-family: "zonapro-black";
   src: url("./FONTS/zonapro-regular-webfont.woff2") format("woff2"),
@@ -21,6 +19,7 @@
   padding: 0;
 }
 
+/* CSS Variables */
 :root {
   --font-family: "zonapro-black", sans-serif;
   --primary-color: #449545;
@@ -42,12 +41,14 @@ html {
   font-family: var(--font-family);
 }
 
+/* Sets the maxwidth of the page*/
 .max__width {
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
 }
 
+/* HERO SECTION START*/
 .hero__section {
   height: 100vh;
   padding: 4.9rem 10rem 12rem 10rem;
@@ -69,6 +70,7 @@ html {
   min-width: 10rem;
 }
 
+/* Hero Main Section Start*/
 .hero__main--section {
   height: 90%;
   display: -webkit-box;
@@ -226,6 +228,9 @@ input:focus {
 .hero--socials li a:hover {
   color: var(--primary-color);
 }
+/* Hero Main Section End*/
+
+/* Hero Image Section Start */
 .hero__img {
   -ms-flex: 1;
   flex: 1;
@@ -242,6 +247,7 @@ input:focus {
 .hero__img img {
   width: 40rem;
 }
+/* Hero Image Section End */
 
 .circular--design {
   position: fixed;
@@ -279,6 +285,10 @@ input:focus {
     font-size: 56.25%;
   }
 
+  .hero__logo--section {
+    height: 5%;
+  }
+
   .hero__main--section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -288,7 +298,6 @@ input:focus {
 
   .hero__section {
     padding-bottom: 5rem;
-    /* text-align: center; */
   }
 
   .hero__textarea {
@@ -434,8 +443,12 @@ input:focus {
     font-size: 43.75%;
   }
 
+  .hero__textarea h1 {
+    font-size: 3.8rem;
+  }
+
   .hero__textarea p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .hero__textarea form input {
     width: 90%;
