@@ -448,12 +448,17 @@ input:focus {
     width: 22rem;
   }
 }
+@media (max-width: 37.5em) {
+  .hero__logo--section img {
+    max-width: 15rem;
+  }
+}
 
 /* Below 600px witdth and 700px height*/
 @media (max-width: 37.5em) and (max-height: 43.75em) {
-  .hero__logo--section img {
+  /* .hero__logo--section img {
     max-width: 10rem;
-  }
+  } */
   .hero__textarea form input {
     width: 90%;
   }
@@ -496,9 +501,9 @@ input:focus {
     font-size: 43.75%;
   }
 
-  .hero__logo--section img {
+  /* .hero__logo--section img {
     max-width: 10rem;
-  }
+  } */
 
   .hero__textarea h1 {
     font-size: 3.8rem;
@@ -514,6 +519,10 @@ input:focus {
   .hero__textarea button {
     right: 5%;
     margin-right: 5px;
+  }
+
+  .hero__img img {
+    width: 35rem;
   }
   /* 
   .hero__img img {
