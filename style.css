@@ -517,25 +517,31 @@ input:focus {
   }
 
   .hero__textarea h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
+  }
+
+  .hero__textarea h1:after {
+    height: 1px;
   }
 
   .hero__textarea p {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+  }
+
+  .hero__textarea form {
+    justify-content: flex-start;
   }
   .hero__textarea form input {
     width: 90%;
   }
-
+  /* 
   .hero__textarea button {
     right: 5%;
-    margin-right: 5px;
-  }
-  .hero__textarea form {
-    justify-content: flex-start;
-  }
+   
+  } */
 
   .hero__textarea button {
+    margin-right: 5px;
     right: 10%;
     padding: 1.5rem 3rem;
   }
@@ -548,12 +554,12 @@ input:focus {
     width: 35rem;
   }
 
-  .circular--design {
+  /* .circular--design {
     width: 15rem;
     height: 15rem;
     bottom: -7.5rem;
     right: -7.5rem;
-  }
+  } */
 }
 
 /* Below 500px witdth and 700px height */
@@ -568,7 +574,7 @@ input:focus {
     width: 30rem;
   }
   .hero__textarea form input {
-    width: 80%;
+    width: 90%;
   }
 
   .hero__textarea button {
@@ -589,6 +595,10 @@ input:focus {
 
 /* Below 450px witdth and 600px height */
 @media (max-width: 28.125em) and (max-height: 37.5em) {
+  .hero__textarea p {
+    font-size: 2.2rem;
+  }
+
   .hero__textarea form input {
     width: 100%;
   }
@@ -622,11 +632,25 @@ input:focus {
   html {
     font-size: 37.5%;
   }
+
+  .hero__textarea h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero__textarea p {
+    font-size: 2rem;
+  }
 }
 
 /* 310px and below */
 @media (max-width: 19.75em) {
+  .hero__textarea h1 {
+    font-size: 4rem;
+  }
   .hero__textarea button {
     padding: 1.5rem 3rem;
+  }
+  .hero__textarea p {
+    font-size: 1.8rem;
   }
 }
