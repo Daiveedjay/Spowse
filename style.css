@@ -1,10 +1,15 @@
 @font-face {
-  font-family: "zonapro-black";
-  src: url("./FONTS/zonapro-regular-webfont.woff2") format("woff2"),
-    url("./FONTS/zonapro-regular-webfont.woff") format("woff"),
-    url("./FONTS/zonapro-bold-webfont.woff2") format("woff2"),
+  font-family: "zonapro-black--bold";
+  src: url("./FONTS/zonapro-bold-webfont.woff2") format("woff2"),
     url("./FONTS/zonapro-bold-webfont.woff") format("woff");
-  font-weight: bolder;
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "zonapro-black--normal";
+  src: url("./FONTS/zonapro-regular-webfont.woff2") format("woff2"),
+    url("./FONTS/zonapro-regular-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 * {
@@ -21,14 +26,15 @@
 
 /* CSS Variables */
 :root {
-  --font-family: "zonapro-black", sans-serif;
+  --font-family-bold: "zonapro-black--bold", sans-serif;
+  --font-family-normal: "zonapro-black--normal", sans-serif;
   --primary-color: #449545;
   --primary-light: #9bc7a7;
   --primary-dark: #255939;
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family-normal);
   position: relative;
   overflow: hidden;
 }
@@ -38,7 +44,7 @@ html {
 }
 
 ::placeholder {
-  font-family: var(--font-family);
+  font-family: var(--font-family-normal);
 }
 
 /* Sets the maxwidth of the page*/
@@ -100,6 +106,7 @@ html {
 }
 
 .hero__textarea h1 {
+  font-family: var(--font-family-bold);
   position: relative;
   font-size: 5rem;
   background-clip: text;
@@ -501,9 +508,9 @@ input:focus {
     font-size: 43.75%;
   }
 
-  /* .hero__logo--section img {
+  .hero__logo--section img {
     max-width: 10rem;
-  } */
+  }
 
   .hero__textarea h1 {
     font-size: 3.8rem;
@@ -549,7 +556,7 @@ input:focus {
 /* Below 510px witdth and 600px height */
 @media (max-width: 31.3em) and (max-height: 37.5em) {
   .hero__img img {
-    width: 22rem;
+    width: 30rem;
   }
   .hero__textarea form input {
     width: 80%;
