@@ -592,7 +592,7 @@ input:focus {
   }
 
   .hero__textarea p {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero__textarea form {
@@ -679,6 +679,13 @@ input:focus {
   }
 } */
 
+/* Below 400px witdth and 500px height */
+@media (max-width: 25em) and (max-height: 31.25em) {
+  .hero__img img {
+    width: 20rem;
+  }
+}
+
 /* Below 450px witdth and 550px height */
 @media (max-width: 28.125em) and (max-height: 36em) {
   .hero__textarea p {
@@ -698,7 +705,7 @@ input:focus {
   }
 
   .hero--socials {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .circular--design {
@@ -744,7 +751,7 @@ input:focus {
 /* Below 500px height */
 @media (max-height: 31.25em) {
   .hero__img img {
-    width: 23rem;
+    width: 18rem;
   }
 
   /* .circular--design {
