@@ -296,6 +296,50 @@ input:focus {
     font-size: 4.5rem;
   }
 }
+
+/* Below 1200 width and 700px height */
+@media (max-width: 75.1em) and (max-height: 43.75em) {
+  .hero__textarea h1 {
+    font-size: 4rem;
+  }
+
+  .hero__textarea p {
+    font-size: 2.1rem;
+  }
+}
+/* Below 1200 width and 600px height */
+@media (max-width: 75.1em) and (max-height: 37.5em) {
+  .hero__textarea p {
+    font-size: 2.2rem;
+  }
+}
+
+/* Below 1100 width and 600px height */
+@media (max-width: 70em) and (max-height: 43.75em) {
+  .hero__textarea p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Below 1100 width and 600px height */
+@media (max-width: 70em) and (max-height: 37.5em) {
+  .hero__textarea h1 {
+    font-size: 4rem;
+  }
+  .hero__textarea p {
+    font-size: 1.8rem;
+  }
+  .hero__textarea form input {
+    width: 100%;
+  }
+  .hero__textarea button {
+    right: 0;
+  }
+  .hero__img img {
+    width: 30rem;
+  }
+}
+
 /* 1000px and below */
 @media (max-width: 62.5em) {
   html {
@@ -359,12 +403,25 @@ input:focus {
   }
 }
 
-/* Below 1000px witdth and 600px height */
+/* Below 1000px witth and 600px height */
 @media (max-width: 62.5em) and (max-height: 37.5em) {
+  .hero__textarea form input {
+    width: 60%;
+  }
+
+  .hero__textarea button {
+    right: 20%;
+  }
+
   .hero__img img {
     width: 20rem;
   }
 }
+
+/* Below 1000 width and 600px height */
+/* @media (max-width: 62.5em) and (max-height: 37.5em) {
+  
+} */
 /* Below 1000px witdth and 500px height */
 @media (max-width: 62.5em) and (max-height: 31.25em) {
   .hero__main--section {
@@ -402,6 +459,18 @@ input:focus {
   .hero__textarea button {
     right: 10%;
   }
+
+  .hero__textarea form input {
+    width: 70%;
+  }
+
+  .hero__textarea button {
+    right: 15%;
+  }
+}
+
+/* Below 900 width and 600px height */
+@media (max-width: 56.25em) and (max-height: 37.5em) {
 }
 
 /* Below 900px witdth and 500px height */
@@ -478,10 +547,14 @@ input:focus {
 /* Below 600px witdth and 600px height */
 @media (max-width: 37.5em) and (max-height: 37.5em) {
   .hero__textarea form input {
-    width: 100%;
+    width: 70%;
   }
-  .hero__textarea button {
+  /* .hero__textarea button {
     right: 0%;
+  } */
+
+  .hero__textarea button {
+    right: 15%;
   }
 }
 
@@ -514,6 +587,7 @@ input:focus {
 
   .hero__textarea {
     align-items: flex-start;
+    gap: 2.5rem;
   }
 
   .hero__textarea h1 {
@@ -560,6 +634,13 @@ input:focus {
   .hero__textarea button {
     padding: 1.5rem 3rem;
   }
+
+  .hero__textarea form input {
+    width: 95%;
+  }
+  .hero__textarea button {
+    right: 5%;
+  }
 }
 /* Below 510px witdth and 600px height */
 @media (max-width: 31.3em) and (max-height: 37.5em) {
@@ -582,8 +663,11 @@ input:focus {
   }
 }
 
-/* Below 500px width  */
-@media (max-width: 28.125em) {
+/* Below 450px witdth and 600px height */
+@media (max-width: 28.125em) and (max-height: 43.75em) {
+  .hero__textarea p {
+    font-size: 2.25rem;
+  }
 }
 
 /* Below 450px witdth and 600px height */
