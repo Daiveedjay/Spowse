@@ -512,12 +512,16 @@ input:focus {
     max-width: 15rem;
   }
 
+  .hero__textarea {
+    align-items: flex-start;
+  }
+
   .hero__textarea h1 {
-    font-size: 3.8rem;
+    font-size: 4.5rem;
   }
 
   .hero__textarea p {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   .hero__textarea form input {
     width: 90%;
@@ -526,6 +530,18 @@ input:focus {
   .hero__textarea button {
     right: 5%;
     margin-right: 5px;
+  }
+  .hero__textarea form {
+    justify-content: flex-start;
+  }
+
+  .hero__textarea button {
+    right: 10%;
+    padding: 1.5rem 3rem;
+  }
+
+  .hero--socials {
+    margin-top: 5rem;
   }
 
   .hero__img img {
@@ -542,10 +558,6 @@ input:focus {
 
 /* Below 500px witdth and 700px height */
 @media (max-width: 31.25em) and (max-height: 43.75em) {
-  /* .hero__img img {
-    width: 20rem;
-  } */
-
   .hero__textarea button {
     padding: 1.5rem 3rem;
   }
@@ -564,29 +576,15 @@ input:focus {
   }
 }
 
-/* Below 500px witdth and 400px height */
+/* Below 500px width and 400px height */
 @media (max-width: 31.25em) and (max-height: 25em) {
   .hero__img img {
     width: 15rem;
   }
 }
 
+/* Below 500px width  */
 @media (max-width: 28.125em) {
-  .hero__textarea {
-    align-items: flex-start;
-  }
-  .hero__textarea form {
-    justify-content: flex-start;
-  }
-
-  .hero__textarea button {
-    right: 10%;
-    padding: 1.5rem 3rem;
-  }
-
-  .hero--socials {
-    margin-top: 1rem;
-  }
 }
 
 /* Below 450px witdth and 600px height */
@@ -596,6 +594,15 @@ input:focus {
   }
   .hero__textarea button {
     right: 0%;
+  }
+}
+/* Below 400px witdth */
+@media (max-width: 25em) {
+  .hero__textarea h1 {
+    font-size: 4rem;
+  }
+  .hero__textarea p {
+    font-size: 1.9rem;
   }
 }
 
