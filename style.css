@@ -558,6 +558,24 @@ input:focus {
   }
 }
 
+@media (max-width: 28.125em) {
+  .hero__textarea {
+    align-items: flex-start;
+  }
+  .hero__textarea form {
+    justify-content: flex-start;
+  }
+
+  .hero__textarea button {
+    right: 10%;
+    padding: 1.5rem 3rem;
+  }
+
+  .hero--socials {
+    margin-top: 1rem;
+  }
+}
+
 /* Below 450px witdth and 600px height */
 @media (max-width: 28.125em) and (max-height: 37.5em) {
   .hero__textarea form input {
