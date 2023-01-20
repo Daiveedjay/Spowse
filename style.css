@@ -682,11 +682,30 @@ input:focus {
 /* Below 450px witdth and 550px height */
 @media (max-width: 28.125em) and (max-height: 36em) {
   .hero__textarea p {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .hero__textarea form input {
+    width: 100%;
+  }
+
+  .hero__textarea button {
+    right: 0%;
   }
 
   .hero__img img {
-    width: 20rem;
+    width: 18rem;
+  }
+
+  .hero--socials {
+    margin-top: 1rem;
+  }
+
+  .circular--design {
+    width: 15rem;
+    height: 15rem;
+    bottom: -7.5rem;
+    right: -7.5rem;
   }
 }
 /* Below 400px witdth */
