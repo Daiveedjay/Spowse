@@ -553,13 +553,6 @@ input:focus {
   .hero__img img {
     width: 35rem;
   }
-
-  /* .circular--design {
-    width: 15rem;
-    height: 15rem;
-    bottom: -7.5rem;
-    right: -7.5rem;
-  } */
 }
 
 /* Below 500px witdth and 700px height */
