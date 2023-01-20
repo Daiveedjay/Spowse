@@ -706,6 +706,7 @@ input:focus {
 
   .hero--socials {
     margin-top: 0rem;
+    padding: 0;
   }
 
   .circular--design {
