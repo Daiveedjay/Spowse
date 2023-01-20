@@ -391,7 +391,6 @@ input:focus {
   }
 }
 
-/* Height adjustment */
 /* Below 1000px witdth and 700px height */
 @media (max-width: 62.5em) and (max-height: 43.75em) {
   .hero__textarea {
@@ -418,10 +417,6 @@ input:focus {
   }
 }
 
-/* Below 1000 width and 600px height */
-/* @media (max-width: 62.5em) and (max-height: 37.5em) {
-  
-} */
 /* Below 1000px witdth and 500px height */
 @media (max-width: 62.5em) and (max-height: 31.25em) {
   .hero__main--section {
@@ -549,9 +544,6 @@ input:focus {
   .hero__textarea form input {
     width: 70%;
   }
-  /* .hero__textarea button {
-    right: 0%;
-  } */
 
   .hero__textarea button {
     right: 15%;
@@ -608,11 +600,6 @@ input:focus {
   .hero__textarea form input {
     width: 90%;
   }
-  /* 
-  .hero__textarea button {
-    right: 5%;
-   
-  } */
 
   .hero__textarea button {
     margin-right: 5px;
@@ -691,16 +678,6 @@ input:focus {
   .hero__textarea p {
     font-size: 1.9rem;
   }
-}
-
-/* Below 400px witdth and 600px height */
-@media (max-width: 25em) and (max-height: 37.5em) {
-  /* .hero__textarea form input {
-    width: 90%;
-  }
-  .hero__textarea button {
-    right: 5%;
-  } */
 }
 
 /* 350px and below */
