@@ -83,6 +83,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 10rem;
+  border: 2px solid red;
 }
 .hero__textarea {
   -webkit-box-flex: 1.2;
@@ -387,7 +388,7 @@ input:focus {
   }
 
   .hero__img img {
-    width: 30rem;
+    width: 25rem;
   }
 }
 
@@ -612,7 +613,7 @@ input:focus {
   }
 
   .hero__img img {
-    width: 35rem;
+    width: 30rem;
   }
 }
 
