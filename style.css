@@ -687,7 +687,7 @@ input:focus {
 }
 
 /* Below 450px witdth and 550px height */
-@media (max-width: 28.125em) and (max-height: 36em) {
+@media (max-width: 31em) and (max-height: 36em) {
   .hero__textarea p {
     font-size: 2rem;
   }
