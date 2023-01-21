@@ -782,11 +782,8 @@ input:focus {
   }
 }
 
-/* Max Height 600px */
-@media (max-height: 37.5em) {
-  /* .hero__img img {
-    width: 25rem;
-  } */
+/* Max Width 500px and Max Height 800px */
+@media (max-width: 31.25em) and (max-height: 50em) {
   .circular--design {
     width: 15rem;
     height: 15rem;
