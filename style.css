@@ -701,7 +701,7 @@ input:focus {
   }
 
   .hero__img img {
-    width: 18rem;
+    width: 16rem;
   }
 
   .hero--socials {
@@ -710,10 +710,10 @@ input:focus {
   }
 
   .circular--design {
-    width: 15rem;
-    height: 15rem;
-    bottom: -7.5rem;
-    right: -7.5rem;
+    width: 10rem;
+    height: 10rem;
+    bottom: -5rem;
+    right: -5rem;
   }
 }
 /* Below 400px witdth */
@@ -751,9 +751,9 @@ input:focus {
 
 /* Below 500px height */
 @media (max-height: 31.25em) {
-  .hero__img img {
+  /* .hero__img img {
     width: 18rem;
-  }
+  } */
 
   /* .circular--design {
     width: 20rem;
@@ -764,9 +764,9 @@ input:focus {
 }
 /* Below 450px height */
 @media (max-height: 28.125em) {
-  .hero__img img {
+  /* .hero__img img {
     width: 20rem;
-  }
+  } */
 }
 
 /* 310px and below */
