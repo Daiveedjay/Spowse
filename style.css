@@ -781,3 +781,16 @@ input:focus {
     font-size: 1.8rem;
   }
 }
+
+/* Max Height 600px */
+@media (max-height: 37.5em) {
+  /* .hero__img img {
+    width: 25rem;
+  } */
+  .circular--design {
+    width: 15rem;
+    height: 15rem;
+    bottom: -7.5rem;
+    right: -7.5rem;
+  }
+}
