@@ -783,7 +783,7 @@ input:focus {
 }
 
 /* Max Width 500px and Max Height 900px */
-@media (max-width: 31.25em) and (max-height: 56.25em) {
+@media (max-width: 31.25em) and (max-height: 58em) {
   .circular--design {
     width: 15rem;
     height: 15rem;
