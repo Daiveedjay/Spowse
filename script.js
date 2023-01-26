@@ -6,6 +6,8 @@ const emailInput = document.querySelector("#email-input");
 const errorMessage = document.querySelector(".error--message");
 const submit = document.querySelector(".submit");
 const modalMessage = document.querySelector(".sucess--modal");
+const input = document.querySelector("#email-input");
+const overlay = document.querySelector(".overlay");
 // Adds an event Listener to the button which verifies the email address
 submit.addEventListener("click", function (e) {
   e.preventDefault();
@@ -22,10 +24,11 @@ submit.addEventListener("click", function (e) {
   } else {
     errorMessage.style.display = "none";
     modalMessage.classList.toggle("toggle--display");
-    heroSection.classList.toggle("overlay");
+    overlay.style.display = "block";
+    input.value = "";
     setTimeout(function () {
       modalMessage.classList.toggle("toggle--display");
-      heroSection.classList.toggle("overlay");
+      overlay.style.display = "none";
     }, 2000);
   }
 });
