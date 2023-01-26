@@ -31,6 +31,8 @@
   --primary-color: #449545;
   --primary-light: #9bc7a7;
   --primary-dark: #255939;
+  --secondary-light: #f5cc65;
+  --secondary-dark: #ddb85b;
 }
 
 body {
@@ -58,6 +60,10 @@ html {
 .hero__section {
   height: 100vh;
   padding: 4.9rem 10rem 12rem 10rem;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .hero__logo--section {
@@ -154,7 +160,7 @@ html {
   left: 0;
   width: 30%;
   height: 2px;
-  background: #f5cc65;
+  background: var(--secondary-light);
   border-radius: 5px;
 }
 .hero__textarea p {
@@ -197,7 +203,7 @@ input:focus {
   transform: translateY(-50%);
   right: 9.5%;
   cursor: pointer;
-  background: #f5cc65;
+  background: var(--secondary-light);
   border: none;
   font-family: var(--font-family);
   font-size: 1.6rem;
@@ -208,7 +214,7 @@ input:focus {
 }
 
 .hero__textarea button:hover {
-  background: #ddb85b;
+  background: var(--secondary-dark);
 }
 
 .hero__textarea .error--message {
@@ -269,6 +275,59 @@ input:focus {
   right: -15rem;
   border-radius: 50%;
   background: var(--primary-color);
+}
+
+.sucess--modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50rem;
+  height: 30rem;
+  top: 50%;
+  left: 50%;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  gap: 2rem;
+  background: #fff;
+}
+
+.toggle--display {
+  display: none;
+}
+
+.sucess--modal i {
+  font-size: 5rem;
+  border: 2px solid var(--primary-color);
+  color: var(--secondary-light);
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+  font-weight: 900;
+}
+
+.sucess--modal h2 {
+  font-size: 2rem;
+  font-family: var(--font-family-bold);
+  color: var(--primary-color);
+}
+
+.sucess--modal p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: var(--font-family-normal);
+  line-height: 1.5;
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid #999;
+}
+
+.sucess--modal span {
+  font-size: 1.5rem;
+  font-family: var(--font-family-bold);
+  color: var(--primary-color);
 }
 
 /* MEDIA QUERIES */
