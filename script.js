@@ -34,10 +34,10 @@ submit.addEventListener("click", function (e) {
     overlay.style.display = "block";
     emailInput.value = "";
 
-    // Removes overlay after 2 seconds
+    // Removes overlay after 2.5 seconds
     setTimeout(function () {
       modalMessage.classList.toggle("toggle--display");
       overlay.style.display = "none";
-    }, 2000);
+    }, 2500);
   }
 });
